@@ -8,6 +8,16 @@ body {
   font-family: "Nunito", sans-serif;
   font-family: "Roboto Flex", sans-serif;
 }
+/* 
+.barra-mimarca {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  font-size: var(--bs-navbar-brand-font-size);
+  color: var(--bs-navbar-brand-color);
+  text-decoration: none;
+  white-space: nowrap;
+} */
 
 .navbar-nav {
   align-items: center;
@@ -107,31 +117,63 @@ footer {
 }
 
 /* Pagina de Owners */
-
-.flex-container1 {
+.owners {
   display: flex;
-  
-  flex flex-flow: row nowrap;
-  align-content:center;
-  align-items:center;
-  justify-content:space-between;
+  align-items: flex-start;
+  padding: 1em;
+  border-radius: 3px;
+  max-width: 100%;
+}
+.owner-foto {
+  margin-right: 1em;
+}
+.owner-txt {
+  flex: 1;
+}
+.owner-titulo {
+  margin: 0 0 0.5em;
 }
 
+/*Galerya Fidel my partner*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-right: 10%;
+}
 
+.texto {
+  grid-column: 1;
+  grid-row: span 3;
+  color: #e5ccf4;
+}
 
-.flex-container2 {
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .texto {
+    display: none;
+  }
+
+  .img-gal {
+    grid-column: 1;
+    grid-row: auto;
+    justify-content: center;
+    border-radius: 5;
+  }
+}
+.img-gal {
+  border: #382d72 solid 1px;
+  border-radius: 5px;
+}
+
+/*Healty Tips*/
+
+/* .container-fluid {
   display: flex;
-  flex flex-flow: row nowrap;
-  align-content:center;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.img1{
-  background-color: #a080e1;
-  width:;
-}
-
-.img2 {
-background-color: #b7c2c6;
-}
+  justify-content: space-evenly;
+} */

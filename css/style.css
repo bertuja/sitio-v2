@@ -1,22 +1,15 @@
-/*Paleta de colores UVA sacada de pinterest
-
-HEX CODES: 
-#01243a
-#442342
-#660f53
-#e06196
-#f5a4c5
-*/
-
 * {
   box-sizing: border-box;
 }
-body {
+* body {
   padding: 0;
   margin: 0;
-  /*Fuente de google*/
   font-family: "Nunito", sans-serif;
   font-family: "Roboto Flex", sans-serif;
+}
+
+nav {
+  background-color: #7e5bcc;
 }
 
 .barra-mimarca {
@@ -29,8 +22,6 @@ body {
   white-space: nowrap;
 }
 
-/* Reemplace la marca x un logo que actua de home*/
-
 .navbar-nav {
   align-items: center;
 }
@@ -39,8 +30,9 @@ body {
   font-size: small;
 }
 
-nav {
+footer {
   background-color: #7e5bcc;
+  text-align: center;
 }
 
 .cuadro1 {
@@ -50,6 +42,7 @@ nav {
 .cuadro2 {
   background-color: #bb8fce;
 }
+
 .cuadro3 {
   background-color: #bf55ec;
 }
@@ -57,12 +50,7 @@ nav {
 .cuadro4 {
   background-color: #8a2be2;
 }
-footer {
-  background-color: #7e5bcc;
-  text-align: center;
-}
 
-/*Index realizada con boostrapt y tuneada con flex*/
 .contenedor-index {
   text-align: center;
   width: 100%;
@@ -83,28 +71,6 @@ footer {
   flex: row wrap;
   align-items: center;
   justify-items: center;
-}
-
-h3 {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  padding-top: 10px;
-  color: black;
-}
-.contenedor-index .cuadro2 h2 {
-  display: flex;
-  align-items: center;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  padding: 2%;
-  border-radius: 15px;
-}
-
-.checkbox {
   position: relative;
   bottom: 0%;
   left: 25%;
@@ -118,281 +84,4 @@ h3 {
   }
 }
 
-label {
-  font-size: large;
-}
-
-.row .col-md-6 {
-  max-width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-  margin-top: var(--bs-gutter-y);
-}
-
-/* Pagina de Owners */
-.owners {
-  display: flex;
-  align-items: flex-start;
-  padding: 1em;
-  border-radius: 3px;
-  max-width: 100%;
-}
-.owner-foto {
-  margin-right: 1em;
-}
-.owner-txt {
-  flex: 1;
-}
-.owner-titulo {
-  margin: 0 0 0.5em;
-}
-
-/*Galerya Fidel my partner con Grid*/
-
-:root {
-  /* fuente base */
-  font-size: 10px;
-}
-
-/*Ya seteo el tamaño de todo*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  background-color: #fafafa;
-}
-
-.container {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 0 2rem 2rem;
-}
-
-.titulo {
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: center;
-  padding: 3.5rem 0;
-  color: #1a1a1a;
-}
-
-.titulo span {
-  display: block;
-}
-.texto {
-  flex: 1 0 24rem;
-  margin: 1rem;
-  padding: 1rem;
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-}
-
-.gallery-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 400ms ease-out;
-}
-
-.gallery-image:hover {
-  transform: scale(1.15);
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-  grid-gap: 2rem;
-}
-
-.gallery,
-.gallery-item {
-  margin: 0;
-}
-
-/* Pagina Healthy hecha grid*/
-
-.contenedor {
-  width: 90%;
-  max-width: 1000px;
-  margin: 1.6em auto;
-  display: grid;
-  gap: 1.6em;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.contenedor > .contenido,
-.contenedor > .sidebar,
-.contenedor > .div {
-  /* background: #fff; */
-  padding: 20px;
-  border: 1px solid #000000;
-}
-
-.contenedor > .contenido {
-  grid-column: span 3;
-  grid-row: span 4;
-}
-
-.contenido > .articulo {
-  /* background: #808e9b; */
-  padding: 20px;
-  margin-top: 5px;
-  color: black;
-}
-.contenedor > .sidebar {
-  /* background: #808e9b; */
-  padding: 20px;
-  margin-top: 5px;
-  color: black;
-}
-.content .article h1,
-.content .article p {
-  padding: 10px;
-}
-.contenedor > .sidebar {
-  grid-column: span 2;
-  grid-row: span 4;
-  /* background: #485460; */
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contenedor .sidebar img {
-  display: block;
-  width: 100%;
-  margin-top: 5px;
-}
-
-.contenedor > .otrotema {
-  background: #8a2be2;
-  color: #b7c2c6;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease;
-}
-
-.contenedor > .otrotema:hover {
-  cursor: pointer;
-  color: #000000;
-  background: #a080e1;
-}
-
-@media screen and (max-width: 768px) {
-  .contenedor .contenido {
-    grid-column: 1 / -1;
-  }
-  .contenedor .sidebar {
-    grid-column: 1 / 6;
-  }
-
-  .contenedor .otrotema {
-    grid-column: 1/-1;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .tabla {
-    flex-basis: calc(50% - 10px);
-  }
-}
-
-@media /*TABLAS*/ .tabla {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 1em;
-  font-family: sans-serif;
-  min-width: 450px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-tabla {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-tr {
-  color: black;
-  text-align: middle;
-}
-td {
-  padding: 12px 15px;
-}
-/*Contactos*/
-
-.container2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 20px;
-}
-
-.content2 {
-  flex-basis: 50%;
-  padding: 20px;
-}
-
-span {
-  display: block;
-}
-.content2 h2 {
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-
-.image2 {
-  flex-basis: 40%;
-  margin-left: 20px;
-}
-
-.image2 img {
-  width: 100%;
-  height: auto;
-  border-radius: 10%;
-  margin-top: 5%;
-}
-
-.map2 {
-  flex-basis: 100%;
-  margin-top: 20px;
-}
-
-.map2 h2 {
-  margin-top: 0;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-}
-
-label {
-  font-weight: bold;
-}
-
-input,
-textarea {
-  padding: 5px;
-}
-
-/* button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button[type */
+/*# sourceMappingURL=style.css.map */

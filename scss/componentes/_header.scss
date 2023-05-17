@@ -1,5 +1,5 @@
 nav {
-  background-color: $colornav;
+  background-color: map-get($colors, "colornav");
 }
 .barra-mimarca {
   padding-top: var(--bs-navbar-brand-padding-y);
@@ -14,5 +14,5 @@ nav {
   align-items: center;
 }
 .nav-link {
-  font-size: $font-size-nav;
+  font-size: $font-size;
 }

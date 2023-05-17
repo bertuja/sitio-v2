@@ -6,6 +6,136 @@
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-family: "Roboto Flex", sans-serif;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+:root {
+  /* fuente base */
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.titulo {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+.titulo span {
+  display: block;
+}
+
+.texto {
+  flex: 1 0 24rem;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-gap: 2rem;
+}
+.gallery,
+.gallery .gallery-item {
+  margin: 0;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.contenedor > .contenido,
+.contenedor > .sidebar,
+.contenedor > .div {
+  /* background: #fff; */
+  padding: 20px;
+  border: 1px solid #000000;
+}
+.contenedor > .contenido {
+  grid-column: span 3;
+  grid-row: span 4;
+}
+.contenedor > .contenido > .articulo {
+  /* background: #808e9b; */
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+}
+.contenedor > .sidebar {
+  grid-column: span 2;
+  grid-row: span 4;
+  /* background: #808e9b; */
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor > .sidebar img {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+.contenedor > .otrotema {
+  background: #8a2be2;
+  color: #b7c2c6;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.contenedor > .otrotema:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #a080e1;
+}
+@media screen and (max-width: 768px) {
+  .contenedor .contenido {
+    grid-column: 1/-1;
+  }
+  .contenedor .sidebar {
+    grid-column: 1/6;
+  }
+  .contenedor .otrotema {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contenedor .tabla {
+    flex-basis: calc(50% - 10px);
+  }
 }
 
 nav {
@@ -82,6 +212,141 @@ footer {
     bottom: 0%;
     left: 0%;
   }
+}
+label {
+  font-size: small;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-top: 10px;
+  color: black;
+}
+
+.contenedor-index .cuadro2 h2 {
+  display: flex;
+  align-items: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.row .col-md-6 {
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: var(--bs-gutter-y);
+}
+
+.owners {
+  display: flex;
+  align-items: flex-start;
+  padding: 1em;
+  border-radius: 3px;
+  max-width: 100%;
+}
+.owners .owner-foto {
+  margin-right: 1em;
+}
+.owners .owner-txt {
+  flex: 1;
+}
+.owners .owner-titulo {
+  margin: 0 0 0.5em;
+}
+
+@media screen and (min-width: 450px) {
+  .tabla {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 450px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  tr {
+    color: black;
+    text-align: middle;
+  }
+  td {
+    padding: 12px 15px;
+  }
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.content2 {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+span {
+  display: block;
+}
+
+.content2 h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.image2 {
+  flex-basis: 40%;
+  margin-left: 20px;
+}
+
+.image2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  margin-top: 5%;
+}
+
+.map2 {
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+
+.map2 h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 5px;
+}
+
+button[type=submit] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

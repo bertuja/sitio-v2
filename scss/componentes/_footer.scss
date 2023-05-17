@@ -1,4 +1,4 @@
 footer {
-  background-color: $colorfooter;
+  background-color: map-get($colors, "colorfooter");
   text-align: center;
 }

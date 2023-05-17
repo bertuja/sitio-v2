@@ -2,3 +2,11 @@
   display: flex;
   flex-flow: row wrap;
 }
+
+@mixin htitulo {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-top: 10px;
+  color: black;
+}

@@ -72,24 +72,24 @@ body {
   justify-items: center;
 } */
 
-h3 {
+/* h3 {
   display: flex;
   justify-content: center;
   align-items: end;
   padding-top: 10px;
   color: black;
-}
-.contenedor-index .cuadro2 h2 {
+} */
+/* .contenedor-index .cuadro2 h2 {
   display: flex;
   align-items: center;
-}
+} */
 
-.img-fluid {
+/* .img-fluid {
   max-width: 100%;
   height: auto;
   padding: 2%;
   border-radius: 15px;
-}
+} */
 
 /* .checkbox {
   position: relative;
@@ -104,20 +104,20 @@ h3 {
     left: 0%;
   }
 } */
-
+/* 
 label {
   font-size: large;
-}
+} */
 
-.row .col-md-6 {
+/* .row .col-md-6 {
   max-width: 100%;
   padding-right: 0;
   padding-left: 0;
   margin-top: var(--bs-gutter-y);
-}
+} */
 
 /* Pagina de Owners */
-.owners {
+/* .owners {
   display: flex;
   align-items: flex-start;
   padding: 1em;
@@ -132,33 +132,33 @@ label {
 }
 .owner-titulo {
   margin: 0 0 0.5em;
-}
+} */
 
 /*Galerya Fidel my partner con Grid*/
 
-:root {
+/* :root {
   /* fuente base */
   font-size: 10px;
 }
 
 /*Ya seteo el tamaño de todo*/
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */ */
 
-body {
+/* body {
   min-height: 100vh;
   background-color: #fafafa;
-}
-
+} */
+/* 
 .container {
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 2rem 2rem;
-}
-
+} */
+/* 
 .titulo {
   font-size: 4rem;
   font-weight: 500;
@@ -177,7 +177,7 @@ body {
   padding: 1rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
-}
+} */
 
 .gallery-image {
   display: block;
@@ -203,6 +203,8 @@ body {
 }
 
 /* Pagina Healthy hecha grid*/
+
+
 
 .contenedor {
   width: 90%;
@@ -292,7 +294,7 @@ body {
   }
 }
 
-@media /*TABLAS*/ .tabla {
+@media .tabla {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 1em;
@@ -373,7 +375,7 @@ textarea {
   padding: 5px;
 }
 
-/* button[type="submit"] {
+ button[type="submit"] {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
@@ -382,4 +384,4 @@ textarea {
   cursor: pointer;
 }
 
-button[type */
+button[type 

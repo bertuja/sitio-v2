@@ -1,1 +1,4 @@
 package.json
+.DS_Store 
+./css/my-stylebak.css
+./css/style.css.map

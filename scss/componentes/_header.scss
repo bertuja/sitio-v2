@@ -15,4 +15,15 @@ nav {
 }
 .nav-link {
   font-size: $font-size;
+  transition: color 0.3s;
+
+  &:hover {
+    /* Estilos al pasar el puntero */
+    color: white;
+  }
+  &.active {
+    /* Estilos para el enlace activo */
+    color: red;
+    font-weight: bold;
+  }
 }

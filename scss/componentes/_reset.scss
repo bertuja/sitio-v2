@@ -3,12 +3,16 @@
   body {
     padding: 0;
     margin: 0;
-    font-family: "Lato", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     min-height: 100vh;
     background-color: $bodycolor;
   }
 }
 
+.row {
+  padding: 0;
+  margin: 0;
+}
 :root {
   /* fuente base */
   font-size: 14px;
@@ -28,6 +32,7 @@
 
 .titulo {
   font-size: 5rem;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
@@ -45,6 +50,12 @@
   padding: 1rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
+}
+h2 {
+  font-family: "Noto Sans", sans-serif;
+}
+p {
+  font-size: large;
 }
 .gallery-image {
   display: block;

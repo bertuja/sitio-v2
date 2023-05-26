@@ -1,12 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 * {
   box-sizing: border-box;
 }
 * body {
   padding: 0;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   min-height: 100vh;
   background-color: #fafafa;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
 }
 
 :root {
@@ -28,6 +34,7 @@
 
 .titulo {
   font-size: 5rem;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
@@ -44,6 +51,14 @@
   padding: 1rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
+}
+
+h2 {
+  font-family: "Noto Sans", sans-serif;
+}
+
+p {
+  font-size: large;
 }
 
 .gallery-image {
@@ -151,17 +166,27 @@ nav {
   white-space: nowrap;
 }
 
+.logo {
+  display: none;
+}
+@media (min-width: 768px) {
+  .logo {
+    display: block;
+  }
+}
+
 .navbar-nav {
   align-items: center;
 }
 
 .nav-link {
-  font-size: small;
+  font-size: medium;
   transition: color 0.3s;
+  color: white;
 }
 .nav-link:hover {
   /* Estilos al pasar el puntero */
-  color: white;
+  color: yellow;
 }
 .nav-link.active {
   /* Estilos para el enlace activo */
@@ -223,7 +248,7 @@ footer {
   }
 }
 label {
-  font-size: small;
+  font-size: medium;
 }
 
 h3 {
@@ -237,6 +262,7 @@ h3 {
 .contenedor-index .cuadro2 h2 {
   display: flex;
   align-items: center;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .img-fluid {
@@ -323,6 +349,7 @@ span {
 .content2 h2 {
   margin-top: 0;
   margin-bottom: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .image2 {
@@ -346,31 +373,71 @@ span {
   margin-top: 0;
 }
 
-form {
+form div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
-
-label {
+form div label {
   font-weight: bold;
+  margin-bottom: 5px;
 }
-
-input,
-textarea {
+form div input,
+form div textarea {
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  max-width: 300px;
 }
-
-button[type=submit] {
+form button[type=submit] {
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+#myCarousel {
+  display: flex;
+  justify-content: center;
+  background-color: #bf55ec;
+}
+#myCarousel .carousel-inner {
+  width: 60%;
+}
+#myCarousel .carousel-inner .carousel-item {
+  position: relative;
+}
+#myCarousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+#myCarousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #fff;
+}
+#myCarousel .carousel-inner .carousel-item .carousel-caption h3 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: wheat;
+}
+#myCarousel .carousel-inner .carousel-item .carousel-caption p {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

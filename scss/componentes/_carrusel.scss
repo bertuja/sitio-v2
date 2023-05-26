@@ -1,0 +1,48 @@
+// Estilos del carrusel
+#myCarousel {
+  display: flex;
+  justify-content: center;
+  background-color: map-get($colors, "color3");
+  .carousel-indicators {
+    li {
+      &.active {
+        // background-color: $primary-color;
+      }
+    }
+  }
+  .carousel-inner {
+    width: 60%;
+    .carousel-item {
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 10%;
+      }
+
+      .carousel-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $caption-background;
+        padding: 10px;
+        color: $caption-color;
+
+        h3 {
+          font-family: $heading-font;
+          font-size: 24px;
+          font-weight: bold;
+          color: wheat;
+        }
+
+        p {
+          font-family: $paragraph-font;
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
